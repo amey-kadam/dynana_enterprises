@@ -19,25 +19,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Image Slideshow
-    const slides = document.querySelectorAll('.slide');
-    let currentSlide = 0;
+    // // Image Slideshow
+    // const slides = document.querySelectorAll('.slide');
+    // let currentSlide = 0;
 
-    function showSlide(index) {
-        // Remove active class from all slides
-        slides.forEach(slide => slide.classList.remove('active'));
+    // function showSlide(index) {
+    //     // Remove active class from all slides
+    //     slides.forEach(slide => slide.classList.remove('active'));
         
-        // Add active class to current slide
-        slides[index].classList.add('active');
-    }
+    //     // Add active class to current slide
+    //     slides[index].classList.add('active');
+    // }
 
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-    }
+    // function nextSlide() {
+    //     currentSlide = (currentSlide + 1) % slides.length;
+    //     showSlide(currentSlide);
+    // }
 
-    // Change slide every 4 seconds
-    setInterval(nextSlide, 4000);
+    // // Change slide every 4 seconds
+    // setInterval(nextSlide, 4000);
 
     // Contact Form Submission
     const contactForm = document.getElementById('contact-form');
